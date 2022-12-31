@@ -1,11 +1,10 @@
-package com.example.splash30
+package com.example.splash30.ui.onboarding
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,28 +17,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.splash30.ui.screens.onboarding.Intro
+import com.example.splash30.R
 import com.example.splash30.ui.theme.Black
 import com.example.splash30.ui.theme.Primary
-import com.example.splash30.ui.theme.Splash30Theme
 import com.example.splash30.ui.theme.Teal200
-
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            Splash30Theme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                   logIn()
-                }
-            }
-        }
-    }
-}
 
 @Composable
 fun logIn() {
@@ -120,11 +101,5 @@ fun logIn() {
             }
             Text(text = annotedText, modifier = modifier, textAlign = TextAlign.Center)
         }
-        }
     }
-
-
-
-
-
-    
+}
