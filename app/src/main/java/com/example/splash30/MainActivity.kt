@@ -18,6 +18,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.splash30.ui.onboarding.SignUp
 import com.example.splash30.ui.screens.onboarding.Intro
 import com.example.splash30.ui.theme.Black
 import com.example.splash30.ui.theme.Primary
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                   logIn()
+                   SignUp()
                 }
             }
         }
